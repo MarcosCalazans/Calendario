@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Calendário</title>
+
+    <style>
+        body {
+            font-family: verdana; 
+            font-size: 10pt;
+        }
+        
+        table.cal {
+            color: #000;
+            border-spacing: 0;
+            border: 3px solid black;
+            border-radius: 0 0 0 0;
+        }
+        
+        /*Altera a cor de fundo nas colunas (par e ímpar)*/        
+        td:nth-child(odd) { /*ímpar*/
+            background: #ffebeb;
+        }
+        
+        td:nth-child(even) { /*par*/
+            background: #ffef71;
+        }
+        
+        td:hover>p{
+            display: none;
+        }
+        
+        .bordadir{
+            border-right: 2px solid #F00;
+        }
+        
+        .bordadebaixo{
+            border-bottom: 2px solid #F00;
+        }
+        
+        td.new {            
+            background-color: #ced0d0;
+        }
+        
+        .cal caption {
+            text-transform: uppercase;
+            background-color: #8989ea;
+            color: #ffffff;            
+            border-radius: 0 0 0 0;
+        }
+        
+        th {
+            text-align: center;
+            border-bottom: 1px solid #F00;
+        }
+        
+        .cal td {
+            width: 55px;
+            height: 55px;
+            vertical-align: center;
+            text-align: center;
+        }
+        
+        span {
+            display: none;
+            text-align: center;
+            color: #0e15c1;
+            font-size: 7pt;
+        }
+        
+        td:hover>span {
+            display: block;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <img src="maxresdefault.jpg" width="417px">
+    <table class="cal">
+        <caption>Abril 2018</caption>
+        <thead>
+            <tr>
+                <th class="bordadir">Dom</th>
+                <th class="bordadir">Seg</th>
+                <th class="bordadir">Ter</th>
+                <th class="bordadir">Qua</th>
+                <th class="bordadir">Qui</th>
+                <th class="bordadir">Sex</th>
+                <th>Sab</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="bordadir bordadebaixo">1*<span>dia da mentira e páscoa</span></td>
+                <td class="bordadir bordadebaixo">2</td>
+                <td class="bordadir bordadebaixo">3</td>
+                <td class="bordadir bordadebaixo">4</td>
+                <td class="bordadir bordadebaixo">5</td>
+                <td class="bordadir bordadebaixo">6</td>
+                <td class="bordadebaixo">7</td>
+            </tr>
+            <tr>    
+                <td class="bordadir bordadebaixo">8</td>
+                <td class="bordadir bordadebaixo">9</td>
+                <td class="bordadir bordadebaixo"><p>10*</p><span><img src="CoolClips_vc012746sem%20marca%20d'agua.png" width="50px"></span></td>
+                <td class="bordadir bordadebaixo">11</td>
+                <td class="bordadir bordadebaixo">12</td>
+                <td class="bordadir bordadebaixo"><p>13*</p><span><img src="e87e4167f4c8b3e093fb42c317c7ccea.png" width="40px"></span></td>
+                <td class="bordadebaixo">14</td>
+            </tr>        
+            <tr>
+                <td class="bordadir bordadebaixo">15</td>
+                <td class="bordadir bordadebaixo">16</td>
+                <td class="bordadir bordadebaixo">17</td>
+                <td class="bordadir bordadebaixo">18</td>
+                <td class="bordadir bordadebaixo">19</td>
+                <td class="bordadir bordadebaixo">20</td>
+                <td class="bordadebaixo"><p>21*</p><span><img src="240px-Oscar_Pereira_da_Silva_-_Retrato_de_Joaquim_José_da_Silva_Xavier_-_Tiradentes,_Acervo_do_Museu_Paulista_da_USP.jpg" width="50px"></span></td>
+            </tr>
+            <tr>
+                <td class="bordadir bordadebaixo">22</td>
+                <td class="bordadir bordadebaixo">23</td>
+                <td class="bordadir bordadebaixo">24</td>
+                <td class="bordadir bordadebaixo">25</td>
+                <td class="bordadir bordadebaixo">26</td>
+                <td class="bordadir bordadebaixo">27</td>
+                <td class="bordadebaixo">28</td>
+            </tr>
+            <tr>
+                <td class="bordadir">29</td>
+                <td class="bordadir">30</td>
+                <td class="new bordadir">1</td>
+                <td class="new bordadir">2</td>
+                <td class="new bordadir">3</td>
+                <td class="new bordadir">4</td>
+                <td class="new">5</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
